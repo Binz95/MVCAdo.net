@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "CreateHelper";
+}
+
+<h2>CreateHelper</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        Name
+        @Html.TextBox("ContactName")
+    </div>
+    <div>
+        Location
+        @Html.TextBox("Location")
+    </div>
+    <input type="submit" />
+ }

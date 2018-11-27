@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@Html.ActionLink("Create New", "Create", "Home")
+@Html.ActionLink("CreateHelper New", "CreateHelper", "Home")
+@foreach (var item in Model)
+{
+    <div>@item.ContactName , @item.Location</div>
+}
+
